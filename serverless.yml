@@ -17,5 +17,6 @@ functions:
     handler: functions/webhook_listener.handler
     events:
       - http:
-          path: /listen
-          method: get
+          path: webhook
+          method: post
+          cors: true
